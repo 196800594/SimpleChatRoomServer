@@ -1,0 +1,17 @@
+target/
+.git
+.gitignore
+.env
+.env.*
+*.md
+LICENSE
+tests/
+benches/
+examples/
+.dockerignore
+Dockerfile*
+docker-compose*
+.idea/
+.vscode/
+*.swp
+*.swo

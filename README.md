@@ -1,4 +1,8 @@
 # Simple Chat Room Server
-- Rust
-- U have to set the os env
-`LOCAL_SERVER`
+- Using **Rust**
+- set OS env `LOCAL_SERVER`
+
+### shell
+```
+docker run -d --name [NAME] -p [PORT]:[PORT] -e LOCAL_SERBER="0.0.0.0:[PORT] --restart unless-stopped chat-room-server
+

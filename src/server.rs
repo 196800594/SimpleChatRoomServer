@@ -14,7 +14,7 @@ pub struct Server;
 
 impl Server {
     pub async fn run(){
-        let local_server = env::var("LOCAL_SERVER").unwrap_or_else(|_| "127.0.0.1:10086".to_string());
+        let local_server = env::var("LOCAL_SERVER").unwrap_or_else(|_| "0.0.0.0:10086".to_string());
         let addr = local_server.clone();
         let listener = TcpListener::bind(local_server).await.expect("Server>> 主机名或端口异常");
         println!("Server>> 服务已启动在 {}", addr);
